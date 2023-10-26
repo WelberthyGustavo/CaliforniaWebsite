@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Montserrat:wght@300;500&family=Raleway:wght@400;700&family=Urbanist&family=Work+Sans:wght@200;300;400&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/*Scrool Smooth*/
+.container {
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+.section {
+    scroll-snap-align: start;
+    height: 100vh;
+    position: relative;
+}
+
+/*videos in background*/
+.back-video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(50%);
+    pointer-events: none; 
+    user-drag: none; 
+    -webkit-user-drag: none;
+}
+
+/*Menu Header*/
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+}
+
+#nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50vh;
+}
+
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+#nav-ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#nav-ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+ 
+}
+
+nav button {
+    display: none;
+}
+
+
+/* Home */
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.titleCali{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 400px;
+}
+
+.descript{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: inherit;
+}
+
+.descript h3{
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    writing-mode: vertical-rl; 
+    text-orientation: mixed;
+    white-space: nowrap; 
+    transform: rotate(-180deg);
+    letter-spacing: 4px;
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    width: 70%;
+    height: inherit;
+}
+
+#title h1 {
+    letter-spacing: 2px;
+    font-size: 18vh;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+.subHome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.textbox1, .textbox2 {
+    max-width: 30%;
+    min-width: 350px;
+    height: inherit;
+}
+
+.textbox2 p{
+    padding: 20px;
+    border-left: 2px solid white;
+    left: 20px;
+}
+
+.subHome h2 {
+    font-size: 35px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+.subHome p {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+
+/*About*/
+
+.geo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.geoCali{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.geoText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 20%;
+}
+
+.geoText h1 {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+.geoText p {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 18px;
+    
+}
+
+#geoImg{
+    width: 30%;
+}
+
+#geoImg img{
+    top: 8vh;
+    position: absolute;
+    width: 200px;
+    border-radius: 10px;
+  
+}
+
+#geoImg p{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+    left: 160px;
+    padding: 10px;
+    width: 70px;
+    font-family: 'Urbanist', sans-serif;
+    color: Black;
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.geoBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 25%;
+    align-items: top;
+}
+
+.boxInfo {
+    width: 230px;
+    height: 150px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.boxInfo h3{
+    padding: 10px;
+}
+
+.boxInfo p{
+    padding: 10px;
+}
+
+
+.card-1{
+    background-image: url('../img/PopulationCali.jpg');
+    background-size: cover;
+}
+
+.card-2{
+    background-image: url('../img/areaCali.jpg');
+    background-size: cover;
+}
+
+.card-3{
+    background-image: url('../img/MottoCali.jpg');
+    background-size: cover;
+}
+
+.card-4{
+    background-image: url('../img/climateCali.jpg');
+    background-size: cover;
+}
+
+.boxfilter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    transition: 0.2s;
+    backdrop-filter: blur(5px);
+    backdrop-filter: brightness(60%);
+    z-index: 0;
+}
+
+.boxInfo:hover .boxfilter{
+   backdrop-filter: brightness(20%);
+}
+
+.slide-controls span{
+    display: none;
+}
+
+/*explore*/
+ 
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.explore h2{
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 50px;
+    width: 80%;
+    height: auto;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.btnExplore{
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+    background-color: none;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding: 15px 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.explore a{
+    text-decoration: none;
+} 
+
+.btnExplore:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Climate*/
+/* Estilo da galeria */
+.gallery {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.season {
+    flex: 1; 
+    position: relative;
+    text-align: center; 
+}
+
+/* Estilo da imagem da estação */
+.season img {
+    width: 100%; /* Preenche toda a largura da div */
+    height: 100%; /* Preenche toda a altura da div */
+    object-fit: cover; /* Redimensiona a imagem para preencher a div */
+    filter: brightness(35%);
+    transition: transform 0.5s, filter 0.5s;
+}
+
+/* Estilo quando o mouse passa por cima da estação */
+.season:hover img,h3,p {
+    transform: scale(1.1);
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+/* Estilo para o título e a descrição */
+.season h3, .season p {
+    position: absolute;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    padding: 10px;
+    bottom: 50%; /* Alinha o texto no centro vertical */
+    left: 0;
+    right: 0;
+    transform: translateY(50%); /* Centraliza verticalmente */
+}
+
+.season p{
+    padding-top: 100px;
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    margin: auto 0;
+}
+
+
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+}
+
+.footer h2{
+    margin: 20px;
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.footer-text p {
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#footer-img img{
+    width: 100%;
+    filter: brightness(15%);
+}
+
+#instagram {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#instagram img{
+    width: 40px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#footer-copy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 35px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+#footer-copy p a{
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    text-decoration: none;
+}

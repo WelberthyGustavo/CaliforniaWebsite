@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/imageSlider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="section">
+                <header>
+                    <div id="menu">
+                        <h1 id="logo">DirectiOn</h1>
+                        <nav id="menu-nav">
+                            <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                                <span id="hamburger"></span>
+                            </button>     
+                            <ul id="nav-ul">
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#discover">Discover</a></li>
+                                <li><a href="#seasons">Seasons</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <div>
+                    <video class="back-video" autoplay loop muted>
+                        <source src="./assets/videos/santamonica.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="homeContent">
+                    <div class="titleCali">
+                        <div class="descript">
+                            <h3>DEVELOPED BY WELBERTHY GUSTAVO</h3>
+                            </div>
+                            <div id="title">
+                                <h1>CALIFORNIA</h1>
+                            </div>
+                    </div>
+                    <div class="subHome">
+                        <div class="textbox1">
+                            <h2>Search for memories</h2>
+                            <p>Seek moments of joy and adventure, where you truly come alive and create cherished memories.</p>
+                        </div>
+                        <div class="textbox2">
+                            <p>California beckons with its vast tapestry of experiences, from the breathtaking landscapes of
+                            Yosemite and the allure of Hollywood to the diverse cultures that define its vibrant cities.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="section" id="about">
+                <div>
+                    <video class="back-video" autoplay loop muted>
+                        <source src="./assets/videos/sandiego2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="geo">
+                    <div class="geoCali">
+                        <div class="geoText">
+                            <h1>About California</h1>
+                            <p>California, once home to diverse Native American cultures, saw Spanish 
+                                colonization in the late 18th century. It became Mexican territory in 1821, 
+                                then part of the United States in 1848. The Gold Rush in 1848 brought a massive 
+                                influx of people, leading to statehood in 1850. California thrived, becoming a 
+                                global economic and cultural powerhouse.</p>
+                        </div>
+                        <div id="geoImg">
+                            <img src="./assets/img/caliFlag.jpg" alt="">
+                            <p>California Flag</p>
+                        </div>
+                    </div>
+                    <div class="geoBoxes">
+                        <div class="boxInfo card-1">
+                            <div class="boxfilter">
+                                <h3>Population</h3>
+                                <p>39.24 Million</p>
+                            </div>
+                        </div>
+                        <div class="boxInfo card-2">
+                            <div class="boxfilter">
+                                <h3>Area</h3>
+                                <p>423,970 square kilometers</p>
+                            </div>
+                        </div>
+                        <div class="boxInfo card-3">
+                            <div class="boxfilter">
+                                <h3>State Motto</h3>
+                                <p>"Eureka" </p>
+                            </div>
+                        </div>
+                        <div class="boxInfo card-4">
+                            <div class="boxfilter">
+                                <h3>Major City</h3>
+                                <p>Los Angeles</p>
+                            </div>
+                        </div>
+                        <div class="slide-controls">
+                            <button class="prev"> < </button>
+                            <span class="slide-number">1</span><span> / </span> <span class="total-slides">4</span>
+                            <button class="next">></button>
+                        </div>
+                    </div>
+            </section>
+            
+            <section class="section">
+               <div class="containerSlider" id="discover">
+                    <div id="slide">
+                        <div class="item" style="background-image: url(./assets/img/sanFrancisco.jpg);">
+                            <div class="content">
+                                <div class="name">San Francisco</div>
+                                <div class="des">Visit the Golden Gate Bridge, Chinatown, Alcatraz Island, and soak in the city's unique atmosphere.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/hollywood.jpg);">
+                            <div class="content">
+                                <div class="name">Hollywood</div>
+                                <div class="des">Explore the world-famous entertainment district, visit the Hollywood Walk of Fame, see the iconic Hollywood Sign, and tour movie studios like Universal Studios or Warner Bros.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/beverlyHills.jpg);">
+                            <div class="content">
+                                <div class="name">Beverly Hills</div>
+                                <div class="des">Experience luxury shopping on Rodeo Drive, admire the elegant mansions, and enjoy fine dining at upscale restaurants. Take a stroll through Beverly Gardens Park and enjoy the beautiful surroundings.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/lakeTahoe.jpg);">
+                            <div class="content">
+                                <div class="name">Lake Tahoe</div>
+                                <div class="des">Enjoy outdoor activities in every season, from winter skiing to summer water sports.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/disneyland.jpg);">
+                            <div class="content">
+                                <div class="name">Disneyland</div>
+                                <div class="des">Explore Disnaland and its magiacal world.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/losAngeles.jpg);">
+                            <div class="content">
+                                <div class="name">Los Angeles</div>
+                                <div class="des">Explore Hollywood, Beverly Hills, Venice Beach, and enjoy the rich cultural and entertainment scene.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                        <div class="item" style="background-image: url(./assets/img/NapaValley.jpg);">
+                            <div class="content">
+                                <div class="name">Napa Valley</div>
+                                <div class="des">Taste wines in one of the world's most famous wine regions and enjoy picturesque landscapes.</div>
+                                <a href="#about"><button class="btnSeeMore" >See more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="toPrev"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+                        <button id="toNext"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+                    </div>
+               </div>
+            </section>
+            <section class="section">
+                <div>
+                    <video class="back-video" autoplay loop muted>
+                        <source src="./assets/videos/walkinginthewoods.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="explore">
+                    <h2>Feel the atmosphere, feel happy !</h2>
+                    <a href="#seasons"><button class="btnExplore">Explore</button></a>
+                </div>
+           </section>
+           <section class="section">
+                <div class="gallery" id="seasons">
+                    <div class="season">
+                        <img src="./assets/img/spring.jpg" alt="">
+                        <h3>Spring</h3>
+                        <p>March to May</p>
+                    </div>
+                    <div class="season">
+                        <img src="./assets/img/summer.jpg" alt="">
+                        <h3>Summer</h3>
+                        <p>June to August</p>
+                    </div>
+                    <div class="season">
+                        <img src="./assets/img/autumn.jpg" alt="">
+                        <h3>Autumn</h3>
+                        <p>September to November</p>
+                    </div>
+                    <div class="season">
+                        <img src="./assets/img/winter.jpg" alt="">
+                        <h3>Winter</h3>
+                        <p>December to February</p>
+                    </div>
+                </div>
+            </section>
+       
+        <section class="section">
+            <div id="footer-img">
+                <img src="./assets/img/programming.jpg" class="back-video" alt="">
+            </div>
+            <div class="footer">
+                <h2>Thank You !</h2>
+                <div class="footer-text">
+                    
+                    <p>If you want a webpage like this, contact me! </p>
+                    <div id="instagram"><a href="https://www.instagram.com/gustavo_code" target="_blank"><img src="./assets/img/icons-instagram.png" alt=""></a></div>
+                </div>
+                <div id="footer-copy">
+                    <p><a href="https://www.instagram.com/gustavo_code" target="_blank">Welberthy Gustavo</a> &copy;  <span id="copyrightYear"></span> </p>
+                </div>
+            </div>
+            
+        </section>
+        </div>
+    </main>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/slideCard.js"></script>
+    <script src="./assets/js/imageSlider.js"></script>
+    <script src="https://kit.fontawesome.com/8c17a1232c.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
